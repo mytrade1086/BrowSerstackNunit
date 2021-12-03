@@ -1,7 +1,11 @@
 - task: CmdLine@2
 - task: BrowserStackConfig@0
   inputs:
-    BrowserStackServiceEndPoint: 'bs'
-    browserstackLocal: true
+    BrowserStackServiceEndPoint: 'bs'- task: BrowserStackResults@1
+  inputs:
+    browserstackProduct: 'automate'
+- task: BrowserStackResults@1
+  inputs:
+    browserstackProduct: 'automate'
   inputs:
     script: 'dotnet test category="demo"'
