@@ -8,5 +8,3 @@
 - task: BrowserStackResults@1
   inputs:
     browserstackProduct: 'automate'
-  inputs:
-    script: 'dotnet test category="demo"'
