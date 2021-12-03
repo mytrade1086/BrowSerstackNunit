@@ -1,9 +1,10 @@
 - task: CmdLine@2
 - task: BrowserStackConfig@0
   inputs:
-    BrowserStackServiceEndPoint: 'bs'- task: BrowserStackResults@1
+    BrowserStackServiceEndPoint: 'bs'- task: BrowserStackConfig@0
   inputs:
-    browserstackProduct: 'automate'
+    BrowserStackServiceEndPoint: 'bs'
+    browserstackLocal: true
 - task: BrowserStackResults@1
   inputs:
     browserstackProduct: 'automate'
