@@ -8,3 +8,9 @@
 - task: BrowserStackResults@1
   inputs:
     browserstackProduct: 'automate'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
